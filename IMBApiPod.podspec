@@ -8,9 +8,9 @@
 
 Pod::Spec.new do |s|
   s.name             = 'IMBApiPod'
-  s.version          = '0.1.1'
+  s.version          = '0.1.3'
   s.summary          = 'A short description of IMBApiPod.'
-  s.description      = 'Prueba de pod'
+  s.description      = 'Se dan funciones para consumir apis'
   s.homepage         = 'https://github.com/IrvinMB/IMBPodApi'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'IrvinMB' => 'imbcr89@gmail.com' }

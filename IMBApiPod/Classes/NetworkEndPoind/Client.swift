@@ -7,10 +7,11 @@
 import Foundation
 
 public class Client: NetworkGeneric {
-    public let baseURL = "https://my-json-server.typicode.com/IrvinMB/mypost1/"
+    public var baseURL:String
     public var session: URLSession
     
-    public init() {
+    public init(elBaseURL:String) {
+        self.baseURL = elBaseURL
         self.session = URLSession.shared
     }
     
@@ -28,7 +29,7 @@ public class Client: NetworkGeneric {
         }
         var pathParametro:String = (parametros?.parameterToString())!
         print(pathParametro)
-        let url = URL(string: "\(baseURL)\(path)\(pathParametro)")
+        let url = URL(string: "\(baseURL)\(elPath)\(pathParametro)")
         let request = URLRequest(url: url!)
 
         self.fetch(type: T.self, with: request, completion: complete)
@@ -72,21 +73,17 @@ public class Client: NetworkGeneric {
             }
         }
     }
-    public func DeleteJson<T: Codable>(type:T.Type, path:String, identificador:String, complete:  @escaping (T) -> Void) {
+    public func DeleteJson(path:String, identificador:String, complete:  @escaping (Bool) -> Void) {
         let elPath:String="\(path)/"
         let url = URL(string: "\(baseURL)\(elPath)\(identificador)")
         var request = URLRequest(url: url!)
-
         request.httpMethod = "DELETE"
         request.setValue("application/json", forHTTPHeaderField: "Accept")
-        request.setValue("application/json", forHTTPHeaderField: "Content-Type")
-        //let data = try! JSONEncoder().encode(post)
-       // request.httpBody = data
-   
-        self.fetch(type: T.self, with: request) { resut in
+        request.setValue("application/json", forHTTPHeaderField: "Content-Type")   
+        self.fetch(type: [String:String].self, with: request) { resut in
             switch resut{
             case .success(let post):
-                complete(post)
+                complete(post.isEmpty)
             case .failure(let error):
                 print(error)
             }
