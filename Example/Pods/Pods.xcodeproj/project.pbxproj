@@ -10,11 +10,10 @@
 		539897B41E28F6D82F65770E1AF300D8 /* IMBApiPod-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 5875AE71B4326208B945C536FAD31FC3 /* IMBApiPod-dummy.m */; };
 		6A3EEE77923A458C240840E8EA2B2742 /* IMBApiPod-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 310D7EB662BB39BCABD0125746C4A03C /* IMBApiPod-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		7310345EF5A2BD73B101B9D3454CA3EB /* Pods-IMBApiPod_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = A5F05E148BE4AD91FD8B89AB74B00645 /* Pods-IMBApiPod_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		76E98ADF9CFD51E141AC0255856F9719 /* ReplaceMe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48A0FFCCE43C5700EE85E69916354853 /* ReplaceMe.swift */; };
-		849F949B267ED4E600113862 /* ApiError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 849F9494267ED4E500113862 /* ApiError.swift */; };
-		849F949D267ED4E600113862 /* NetworkGeneric.swift in Sources */ = {isa = PBXBuildFile; fileRef = 849F9496267ED4E500113862 /* NetworkGeneric.swift */; };
-		849F949E267ED4E600113862 /* Client.swift in Sources */ = {isa = PBXBuildFile; fileRef = 849F9498267ED4E500113862 /* Client.swift */; };
-		849F949F267ED4E600113862 /* Dictionary.swift in Sources */ = {isa = PBXBuildFile; fileRef = 849F949A267ED4E600113862 /* Dictionary.swift */; };
+		849F94E5267F012F00113862 /* Client.swift in Sources */ = {isa = PBXBuildFile; fileRef = 849F94DF267F012E00113862 /* Client.swift */; };
+		849F94E6267F012F00113862 /* Dictionary.swift in Sources */ = {isa = PBXBuildFile; fileRef = 849F94E1267F012E00113862 /* Dictionary.swift */; };
+		849F94E7267F012F00113862 /* ApiError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 849F94E3267F012E00113862 /* ApiError.swift */; };
+		849F94E8267F012F00113862 /* NetworkGeneric.swift in Sources */ = {isa = PBXBuildFile; fileRef = 849F94E4267F012E00113862 /* NetworkGeneric.swift */; };
 		90EAE83AA0D190629265A88BDE48ADB5 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
 		9235AE9322B987E1C1A34DB682A84B87 /* Pods-IMBApiPod_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 5592663F996D6BC4317C25B93501483E /* Pods-IMBApiPod_Example-dummy.m */; };
 		A69C1FF29D4596AE7F1A27731AC444A4 /* Pods-IMBApiPod_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 990CC19444C4564FC88256A63015EA09 /* Pods-IMBApiPod_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -47,7 +46,6 @@
 		310D7EB662BB39BCABD0125746C4A03C /* IMBApiPod-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "IMBApiPod-umbrella.h"; sourceTree = "<group>"; };
 		41DF5E6DFE9BD40765B164240C46C5B0 /* IMBApiPod.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = IMBApiPod.release.xcconfig; sourceTree = "<group>"; };
 		47888C3128ABEDF5A013A3CA38D9E514 /* Pods-IMBApiPod_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-IMBApiPod_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
-		48A0FFCCE43C5700EE85E69916354853 /* ReplaceMe.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ReplaceMe.swift; path = IMBApiPod/Classes/ReplaceMe.swift; sourceTree = "<group>"; };
 		5592663F996D6BC4317C25B93501483E /* Pods-IMBApiPod_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-IMBApiPod_Example-dummy.m"; sourceTree = "<group>"; };
 		56EFCFAD7EDB0EF00F9925F729415841 /* Pods-IMBApiPod_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-IMBApiPod_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		5875AE71B4326208B945C536FAD31FC3 /* IMBApiPod-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "IMBApiPod-dummy.m"; sourceTree = "<group>"; };
@@ -55,10 +53,10 @@
 		59370C755519477011A450CE6A07FB44 /* Pods-IMBApiPod_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-IMBApiPod_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
 		684ED02D249E6E3DF04CDB3A3647B63D /* Pods-IMBApiPod_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-IMBApiPod_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		849F9494267ED4E500113862 /* ApiError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApiError.swift; sourceTree = "<group>"; };
-		849F9496267ED4E500113862 /* NetworkGeneric.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkGeneric.swift; sourceTree = "<group>"; };
-		849F9498267ED4E500113862 /* Client.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Client.swift; sourceTree = "<group>"; };
-		849F949A267ED4E600113862 /* Dictionary.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Dictionary.swift; sourceTree = "<group>"; };
+		849F94DF267F012E00113862 /* Client.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Client.swift; sourceTree = "<group>"; };
+		849F94E1267F012E00113862 /* Dictionary.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Dictionary.swift; sourceTree = "<group>"; };
+		849F94E3267F012E00113862 /* ApiError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApiError.swift; sourceTree = "<group>"; };
+		849F94E4267F012E00113862 /* NetworkGeneric.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkGeneric.swift; sourceTree = "<group>"; };
 		89A5AAF562B3502E65FE4FFD064A90BA /* Pods-IMBApiPod_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-IMBApiPod_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
 		89F4244DEEFD50024A633EE55E9B19BD /* IMBApiPod.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = IMBApiPod.modulemap; sourceTree = "<group>"; };
 		8C42BEA64ED5153A21FDD0164A9C582F /* IMBApiPod.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = IMBApiPod.debug.xcconfig; sourceTree = "<group>"; };
@@ -152,10 +150,9 @@
 		5992A17A5677BA922A5B2B918B7DBD19 /* IMBApiPod */ = {
 			isa = PBXGroup;
 			children = (
-				849F9497267ED4E500113862 /* EndPoind */,
-				849F9499267ED4E600113862 /* Extensions */,
-				849F9493267ED4E500113862 /* Network */,
-				48A0FFCCE43C5700EE85E69916354853 /* ReplaceMe.swift */,
+				849F94DE267F012E00113862 /* NetworkEndPoind */,
+				849F94E0267F012E00113862 /* Extensiones */,
+				849F94E2267F012E00113862 /* NetworkClass */,
 				192F7B436FA6AFE03E282AC65A859D9E /* Pod */,
 				48275DDA460F2D41C6D62CA9EF41C28B /* Support Files */,
 			);
@@ -163,32 +160,32 @@
 			path = ../..;
 			sourceTree = "<group>";
 		};
-		849F9493267ED4E500113862 /* Network */ = {
+		849F94DE267F012E00113862 /* NetworkEndPoind */ = {
 			isa = PBXGroup;
 			children = (
-				849F9494267ED4E500113862 /* ApiError.swift */,
-				849F9496267ED4E500113862 /* NetworkGeneric.swift */,
+				849F94DF267F012E00113862 /* Client.swift */,
 			);
-			name = Network;
-			path = IMBApiPod/Network;
+			name = NetworkEndPoind;
+			path = /Users/usuario/Desktop/pruebasDeGit/PODS/IMBApiPod/IMBApiPod/Classes/NetworkEndPoind;
+			sourceTree = "<absolute>";
+		};
+		849F94E0267F012E00113862 /* Extensiones */ = {
+			isa = PBXGroup;
+			children = (
+				849F94E1267F012E00113862 /* Dictionary.swift */,
+			);
+			name = Extensiones;
+			path = IMBApiPod/Classes/Extensiones;
 			sourceTree = "<group>";
 		};
-		849F9497267ED4E500113862 /* EndPoind */ = {
+		849F94E2267F012E00113862 /* NetworkClass */ = {
 			isa = PBXGroup;
 			children = (
-				849F9498267ED4E500113862 /* Client.swift */,
+				849F94E3267F012E00113862 /* ApiError.swift */,
+				849F94E4267F012E00113862 /* NetworkGeneric.swift */,
 			);
-			name = EndPoind;
-			path = IMBApiPod/EndPoind;
-			sourceTree = "<group>";
-		};
-		849F9499267ED4E600113862 /* Extensions */ = {
-			isa = PBXGroup;
-			children = (
-				849F949A267ED4E600113862 /* Dictionary.swift */,
-			);
-			name = Extensions;
-			path = IMBApiPod/Extensions;
+			name = NetworkClass;
+			path = IMBApiPod/Classes/NetworkClass;
 			sourceTree = "<group>";
 		};
 		A60634C0CDCAC168501E93244635C6A7 /* Targets Support Files */ = {
@@ -423,11 +420,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				539897B41E28F6D82F65770E1AF300D8 /* IMBApiPod-dummy.m in Sources */,
-				849F949D267ED4E600113862 /* NetworkGeneric.swift in Sources */,
-				849F949E267ED4E600113862 /* Client.swift in Sources */,
-				849F949F267ED4E600113862 /* Dictionary.swift in Sources */,
-				76E98ADF9CFD51E141AC0255856F9719 /* ReplaceMe.swift in Sources */,
-				849F949B267ED4E600113862 /* ApiError.swift in Sources */,
+				849F94E6267F012F00113862 /* Dictionary.swift in Sources */,
+				849F94E5267F012F00113862 /* Client.swift in Sources */,
+				849F94E7267F012F00113862 /* ApiError.swift in Sources */,
+				849F94E8267F012F00113862 /* NetworkGeneric.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
