@@ -1,0 +1,16 @@
+PODS:
+  - IMBApiPod (0.1.0)
+
+DEPENDENCIES:
+  - IMBApiPod (from `../`)
+
+EXTERNAL SOURCES:
+  IMBApiPod:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  IMBApiPod: 29a328b85eebca43b58ecad23c63229f4ea85c10
+
+PODFILE CHECKSUM: 34dd7b91c95b4cba0acb28ba3d4c77257d384a0b
+
+COCOAPODS: 1.10.1

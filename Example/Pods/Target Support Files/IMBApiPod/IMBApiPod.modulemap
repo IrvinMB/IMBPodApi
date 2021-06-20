@@ -1,0 +1,6 @@
+framework module IMBApiPod {
+  umbrella header "IMBApiPod-umbrella.h"
+
+  export *
+  module * { export * }
+}
